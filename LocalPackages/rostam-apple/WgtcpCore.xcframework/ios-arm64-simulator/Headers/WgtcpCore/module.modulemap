@@ -1,0 +1,7 @@
+/// Nested under WgtcpCore/ deliberately: xcodebuild flattens each xcframework's
+/// Headers into include/, so a modulemap at the Headers root would collide with
+/// RedSocketCore's.
+module WgtcpCore {
+    header "wgtcp_core.h"
+    export *
+}

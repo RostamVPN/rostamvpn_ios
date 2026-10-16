@@ -1,0 +1,29 @@
+# Build output
+build
+.build/
+DerivedData/
+*.xcuserdatad
+xcuserdata/
+*.ips
+
+# Signing — never commit. Developer.xcconfig carries the Team ID, which is
+# account state, not product definition.
+**/Developer.xcconfig
+*.mobileprovision
+*.p12
+
+.DS_Store
+
+# ── BRAND SELECTION ───────────────────────────────────────────────────────────
+# Written by Scripts/select-brand.sh from Brands/<brand>/, which IS committed.
+# Deliberately ignored: the selection is build state, not product definition.
+# Absent + a hard #include + Scripts/verify-brand.sh makes a missing selection a
+# build failure, not a shipped app.
+Config/Brand.xcconfig
+rostamvpn/Brand/
+
+!**/vendor/**
+!**/vendor/**/target/
+!**/vendor/**/.cargo/
+!**/.cargo/
+!**/local-maven/**

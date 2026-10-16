@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BrandAppGroup</key>
+	<string>$(BRAND_APP_GROUP)</string>
+	<key>BrandAppStoreID</key>
+	<string>$(BRAND_APPSTORE_ID)</string>
+	<key>BrandCashierBase</key>
+	<string>$(BRAND_CASHIER_BASE)</string>
+	<key>BrandCashierKey</key>
+	<string>$(BRAND_CASHIER_KEY)</string>
+	<key>BrandDiscFillsOnConnect</key>
+	<string>$(BRAND_DISC_FILLS_ON_CONNECT)</string>
+	<key>BrandDisplayName</key>
+	<string>$(BRAND_DISPLAY_NAME)</string>
+	<key>BrandPaidOnly</key>
+	<string>$(BRAND_PAID_ONLY)</string>
+	<key>BrandHasMascot</key>
+	<string>$(BRAND_HAS_MASCOT)</string>
+	<key>BrandID</key>
+	<string>$(BRAND_ID)</string>
+	<key>BrandKeychainGroup</key>
+	<string>$(BRAND_KEYCHAIN_GROUP)</string>
+	<key>BrandLaunchDiscOffsetY</key>
+	<string>$(BRAND_LAUNCH_DISC_OFFSET_Y)</string>
+	<key>BrandLaunchDiscScale</key>
+	<string>$(BRAND_LAUNCH_DISC_SCALE)</string>
+	<key>BrandLegacyTunnelIDs</key>
+	<string>$(BRAND_LEGACY_TUNNEL_IDS)</string>
+	<key>BrandLegalOperator</key>
+	<string>$(BRAND_LEGAL_OPERATOR)</string>
+	<key>BrandMarkScale</key>
+	<string>$(BRAND_MARK_SCALE)</string>
+	<key>BrandProvenance</key>
+	<string>$(BRAND_PROVENANCE)</string>
+	<key>BrandSiteURL</key>
+	<string>$(BRAND_SITE_URL)</string>
+	<key>BrandStoreKitIDs</key>
+	<string>$(BRAND_STOREKIT_IDS)</string>
+	<key>BrandStyle</key>
+	<string>$(BRAND_STYLE)</string>
+	<key>BrandSupportEmail</key>
+	<string>$(BRAND_SUPPORT_EMAIL)</string>
+	<key>BrandTagline</key>
+	<string>$(BRAND_TAGLINE)</string>
+	<key>BrandTunnelBundleID</key>
+	<string>$(BRAND_TUNNEL_BUNDLE_ID)</string>
+	<key>BrandWGTCPAPIKey</key>
+	<string>$(BRAND_WGTCP_API_KEY)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Used only to scan a $(BRAND_DISPLAY_NAME) server code. Nothing is photographed, stored or sent.</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+</dict>
+</plist>

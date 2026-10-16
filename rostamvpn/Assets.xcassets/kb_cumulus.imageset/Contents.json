@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "kb_cumulus.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

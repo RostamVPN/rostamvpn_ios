@@ -1,0 +1,15 @@
+{
+  "images": [
+    {
+      "filename": "BrandDialMark.svg",
+      "idiom": "universal"
+    }
+  ],
+  "info": {
+    "author": "gen-ios.py",
+    "version": 1
+  },
+  "properties": {
+    "preserves-vector-representation": true
+  }
+}

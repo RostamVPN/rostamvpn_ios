@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>BrandID</key>
+	<string>$(BRAND_ID)</string>
+	<key>BrandDisplayName</key>
+	<string>$(BRAND_DISPLAY_NAME)</string>
+	<key>BrandAppGroup</key>
+	<string>$(BRAND_APP_GROUP)</string>
+	<key>BrandTunnelBundleID</key>
+	<string>$(BRAND_TUNNEL_BUNDLE_ID)</string>
+	<key>BrandKeychainGroup</key>
+	<string>$(BRAND_KEYCHAIN_GROUP)</string>
+	<key>BrandPaidOnly</key>
+	<string>$(BRAND_PAID_ONLY)</string>
+	<key>BrandLegacyTunnelIDs</key>
+	<string>$(BRAND_LEGACY_TUNNEL_IDS)</string>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.networkextension.packet-tunnel</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>$(PRODUCT_MODULE_NAME).RedSocketPacketTunnelProvider</string>
+	</dict>
+</dict>
+</plist>

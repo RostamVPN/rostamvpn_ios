@@ -1,0 +1,4 @@
+module RedSocketCore {
+    header "redsocket_core.h"
+    export *
+}

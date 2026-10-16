@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A355B982D1A235E0069444C /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE85D992D1238410073DECA /* libresolv.9.tbd */; };
+		HEV00001000000000000001 /* HevSocks5Tunnel in Frameworks */ = {isa = PBXBuildFile; productRef = HEV00002000000000000001 /* HevSocks5Tunnel */; };
+		NOOSH0004000000000000002 /* RedSocketPacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = NOOSH0002000000000000002 /* RedSocketPacketTunnelProvider.swift */; };
+		NOOSH0005000000000000001 /* RedSocketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = NOOSH0002000000000000001 /* RedSocketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		NOOSH0010000000000000001 /* RostamKit in Frameworks */ = {isa = PBXBuildFile; productRef = NOOSH0010000000000000002 /* RostamKit */; };
+		NOOSHDAROO100000000000003 /* RostamKitExtension in Frameworks */ = {isa = PBXBuildFile; productRef = NOOSHDAROO100000000000002 /* RostamKitExtension */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		NOOSH0007000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B621B62D077E560055C561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = NOOSH0008000000000000001;
+			remoteInfo = RedSocketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A21E5322D0C1FA9008ECD37 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				NOOSH0005000000000000001 /* RedSocketTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6A21E5242D0C1FA9008ECD37 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		6AE85D992D1238410073DECA /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		BRANDCFG0000000000000001 /* App.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.debug.xcconfig; sourceTree = "<group>"; };
+		BRANDCFG0000000000000002 /* App.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.release.xcconfig; sourceTree = "<group>"; };
+		BRANDCFG0000000000000003 /* Tunnel.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tunnel.xcconfig; sourceTree = "<group>"; };
+		BRANDCFG0000000000000004 /* AppCommon.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppCommon.xcconfig; sourceTree = "<group>"; };
+		BRANDCFG0000000000000005 /* Brand.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Brand.xcconfig; sourceTree = "<group>"; };
+		BRANDCFG0000000000000006 /* RostamVPN-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RostamVPN-Info.plist"; sourceTree = "<group>"; };
+		BRANDCFG0000000000000007 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		BRANDCFG0000000000000008 /* Tunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tunnel.entitlements; sourceTree = "<group>"; };
+		E8B621BE2D077E560055C561 /* RostamVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RostamVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		NOOSH0002000000000000001 /* RedSocketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RedSocketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		NOOSH0002000000000000002 /* RedSocketPacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedSocketPacketTunnelProvider.swift; sourceTree = "<group>"; };
+		NOOSH0002000000000000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		NOOSH0002000000000000004 /* RedSocketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RedSocketTunnel.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E8B621C02D077E560055C561 /* rostamvpn */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = rostamvpn;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8B621BB2D077E560055C561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A355B982D1A235E0069444C /* libresolv.9.tbd in Frameworks */,
+				NOOSH0010000000000000001 /* RostamKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		NOOSH0001000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				NOOSHDAROO100000000000003 /* RostamKitExtension in Frameworks */,
+				HEV00001000000000000001 /* HevSocks5Tunnel in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A21E5232D0C1FA9008ECD37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AE85D992D1238410073DECA /* libresolv.9.tbd */,
+				6A21E5242D0C1FA9008ECD37 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BRANDCFG0000000000000010 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BRANDCFG0000000000000005 /* Brand.xcconfig */,
+				BRANDCFG0000000000000004 /* AppCommon.xcconfig */,
+				BRANDCFG0000000000000001 /* App.debug.xcconfig */,
+				BRANDCFG0000000000000002 /* App.release.xcconfig */,
+				BRANDCFG0000000000000003 /* Tunnel.xcconfig */,
+				BRANDCFG0000000000000006 /* RostamVPN-Info.plist */,
+				BRANDCFG0000000000000007 /* App.entitlements */,
+				BRANDCFG0000000000000008 /* Tunnel.entitlements */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E8B621B52D077E560055C561 = {
+			isa = PBXGroup;
+			children = (
+				BRANDCFG0000000000000010 /* Config */,
+				E8B621C02D077E560055C561 /* rostamvpn */,
+				NOOSH0003000000000000001 /* RedSocketTunnel */,
+				6A21E5232D0C1FA9008ECD37 /* Frameworks */,
+				E8B621BF2D077E560055C561 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8B621BF2D077E560055C561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8B621BE2D077E560055C561 /* RostamVPN.app */,
+				NOOSH0002000000000000001 /* RedSocketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		NOOSH0003000000000000001 /* RedSocketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				NOOSH0002000000000000002 /* RedSocketPacketTunnelProvider.swift */,
+				NOOSH0002000000000000003 /* Info.plist */,
+				NOOSH0002000000000000004 /* RedSocketTunnel.entitlements */,
+			);
+			path = RedSocketTunnel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8B621BD2D077E560055C561 /* RostamVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B621D12D077E580055C561 /* Build configuration list for PBXNativeTarget "RostamVPN" */;
+			buildPhases = (
+				E8B621BA2D077E560055C561 /* Sources */,
+				E8B621BB2D077E560055C561 /* Frameworks */,
+				E8B621BC2D077E560055C561 /* Resources */,
+				E8B627112D077FD80055C561 /* SwiftLint */,
+				6A21E5322D0C1FA9008ECD37 /* Embed Foundation Extensions */,
+				BRANDCFG0000000000000020 /* Verify Brand */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				NOOSH0009000000000000001 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E8B621C02D077E560055C561 /* rostamvpn */,
+			);
+			name = RostamVPN;
+			packageProductDependencies = (
+				NOOSH0010000000000000002 /* RostamKit */,
+			);
+			productName = rostamvpn;
+			productReference = E8B621BE2D077E560055C561 /* RostamVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		NOOSH0008000000000000001 /* RedSocketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = NOOSH000A000000000000001 /* Build configuration list for PBXNativeTarget "RedSocketTunnel" */;
+			buildPhases = (
+				NOOSH0004000000000000001 /* Sources */,
+				NOOSH0001000000000000001 /* Frameworks */,
+				NOOSH0006000000000000001 /* Resources */,
+				BRANDCFG0000000000000021 /* Verify Brand */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedSocketTunnel;
+			packageProductDependencies = (
+				NOOSHDAROO100000000000002 /* RostamKitExtension */,
+				HEV00002000000000000001 /* HevSocks5Tunnel */,
+			);
+			productName = RedSocketTunnel;
+			productReference = NOOSH0002000000000000001 /* RedSocketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8B621B62D077E560055C561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					E8B621BD2D077E560055C561 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					NOOSH0008000000000000001 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = E8B621B92D077E560055C561 /* Build configuration list for PBXProject "rostamvpn" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				am,
+				ar,
+				az,
+				azb,
+				be,
+				bo,
+				ckb,
+				de,
+				el,
+				es,
+				fa,
+				fi,
+				fr,
+				he,
+				hi,
+				hr,
+				id,
+				it,
+				kk,
+				km,
+				ko,
+				ky,
+				my,
+				nb,
+				nl,
+				pt,
+				ru,
+				sw,
+				tg,
+				th,
+				ti,
+				tk,
+				tr,
+				uk,
+				uz,
+				vi,
+				"zh-Hans",
+			);
+			mainGroup = E8B621B52D077E560055C561;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6A355A6D2D19D22C0069444C /* XCLocalSwiftPackageReference "LocalPackages/rostam-apple" */,
+				HEV00003000000000000001 /* XCLocalSwiftPackageReference "LocalPackages/hev-socks5-tunnel-apple" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E8B621BF2D077E560055C561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8B621BD2D077E560055C561 /* RostamVPN */,
+				NOOSH0008000000000000001 /* RedSocketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8B621BC2D077E560055C561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		NOOSH0006000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BRANDCFG0000000000000020 /* Verify Brand */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Scripts/verify-brand.sh",
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Assets.car",
+			);
+			name = "Verify Brand";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/verify-brand.stamp",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"$SRCROOT/Scripts/verify-brand.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BRANDCFG0000000000000021 /* Verify Brand */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Scripts/verify-brand.sh",
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Verify Brand";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/verify-brand.stamp",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"$SRCROOT/Scripts/verify-brand.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8B627112D077FD80055C561 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint --quiet || echo \"warning: SwiftLint found violations but continuing build\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8B621BA2D077E560055C561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		NOOSH0004000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				NOOSH0004000000000000002 /* RedSocketPacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		NOOSH0009000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = NOOSH0008000000000000001 /* RedSocketTunnel */;
+			targetProxy = NOOSH0007000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8B621D22D077E580055C561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BRANDCFG0000000000000001 /* App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DISABLE_SWIFT_PACKAGE_MANAGER_DEBUG_SUPPORT = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Config/RostamVPN-Info.plist";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used only to scan a $(BRAND_DISPLAY_NAME) server code. Nothing is photographed, stored or sent.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/rostamvpn",
+				);
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8B621D32D077E580055C561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BRANDCFG0000000000000002 /* App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DISABLE_SWIFT_PACKAGE_MANAGER_DEBUG_SUPPORT = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Config/RostamVPN-Info.plist";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used only to scan a $(BRAND_DISPLAY_NAME) server code. Nothing is photographed, stored or sent.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/rostamvpn",
+				);
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8B621D42D077E580055C561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DISABLE_SWIFT_PACKAGE_MANAGER_DEBUG_SUPPORT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8B621D52D077E580055C561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DISABLE_SWIFT_PACKAGE_MANAGER_DEBUG_SUPPORT = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		NOOSH000B000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BRANDCFG0000000000000003 /* Tunnel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RedSocketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RedSocketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		NOOSH000B000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BRANDCFG0000000000000003 /* Tunnel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RedSocketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RedSocketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8B621B92D077E560055C561 /* Build configuration list for PBXProject "rostamvpn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B621D42D077E580055C561 /* Debug */,
+				E8B621D52D077E580055C561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B621D12D077E580055C561 /* Build configuration list for PBXNativeTarget "RostamVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B621D22D077E580055C561 /* Debug */,
+				E8B621D32D077E580055C561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		NOOSH000A000000000000001 /* Build configuration list for PBXNativeTarget "RedSocketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				NOOSH000B000000000000001 /* Debug */,
+				NOOSH000B000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6A355A6D2D19D22C0069444C /* XCLocalSwiftPackageReference "LocalPackages/rostam-apple" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "LocalPackages/rostam-apple";
+		};
+		HEV00003000000000000001 /* XCLocalSwiftPackageReference "LocalPackages/hev-socks5-tunnel-apple" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "LocalPackages/hev-socks5-tunnel-apple";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		HEV00002000000000000001 /* HevSocks5Tunnel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = HEV00003000000000000001 /* XCLocalSwiftPackageReference "LocalPackages/hev-socks5-tunnel-apple" */;
+			productName = HevSocks5Tunnel;
+		};
+		NOOSH0010000000000000002 /* RostamKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A355A6D2D19D22C0069444C /* XCLocalSwiftPackageReference "LocalPackages/rostam-apple" */;
+			productName = RostamKit;
+		};
+		NOOSHDAROO100000000000002 /* RostamKitExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A355A6D2D19D22C0069444C /* XCLocalSwiftPackageReference "LocalPackages/rostam-apple" */;
+			productName = RostamKitExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E8B621B62D077E560055C561 /* Project object */;
+}

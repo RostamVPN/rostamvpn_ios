@@ -1,0 +1,4 @@
+module CHevSocks5Tunnel {
+    umbrella header "hev-main.h"
+    export *
+}
